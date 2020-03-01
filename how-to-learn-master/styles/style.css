@@ -30,21 +30,18 @@
     z-index: 0;
  }
 
-.table__cell_theme_dark {
-    width: 200px;
-    color:#1F1F1F;
-    margin-right: 0;
-    margin-top: 80px;
-    color: white;
+
+ .logo {
+
  }
 
 .logo_place_header {
     display: flex;
-    height: 32px;
-    width: 183px;
-    position: absolute;
+    position: absolute; 
     top: 30px;
     left: 64px;
+    height: 32px;
+    width: 183px; 
  }
 
 .header__title {
@@ -65,6 +62,7 @@
     color: black;
     bottom: 30px;
     left: 64px;
+    margin-bottom: 0;
     }
 
 
@@ -99,20 +97,26 @@
    margin: 100px auto;
  }
 
- .two-columns__paragraph_margin {
-    margin-top: 30px;
+ .two-columns__paragraph { 
+    margin: 0px;
  }
 
+ .two-columns__main-text p:not(:first-child) {
+    margin-top: 30px;
+  }
+
 .two-columns__brief  {
-     width: 175px;
+    width: 175px;
     color: #2F80ED;
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;   
+    margin-top: 0;
  }
     
 .two-columns__main-text {
-     width: 80%;
+    width: 80%;
+    justify-content: space-between;
     min-width: 784px;
     line-height: 34px;
     font-size: 24px;
@@ -148,14 +152,6 @@
  }   
 
  .section-title_theme_dark {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    width: 60%;
-    line-height: 69px;
-    font-size: 60px;
-    font-weight: bolder;
-     margin: auto;  
      color: white;
  }
 
@@ -172,20 +168,7 @@
  }
 
  .section-subtitle_theme-dark {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    width: 60%;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;  
-    margin: auto;
-    margin-top: 20px;
     color: white;
- }
-
-.table__cell_padding {
-        margin-top: 60px;
  }
 
 .table {
@@ -195,18 +178,11 @@
     margin: auto;
     width: 1100px;
     flex-wrap: wrap;
-    padding-top: 60px;
     z-index: 1;
  }
 
  .table_theme_dark {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: auto;
-    width: 1100px;
-    flex-wrap: wrap;
-    z-index: 1;
+    color:  #1F1F1F;
  }
 
 .table__cell {       
@@ -217,6 +193,7 @@
     width: 250px;
     padding: 0px;
     justify-content: flex-start;
+    margin-top: 60px;
  }
 
 .table__heading {
@@ -227,10 +204,7 @@
     }
 
 .table__heading_theme_dark {
-    line-height: 1.15;
-    font-size: 24px;
-    font-weight: bolder;
-    margin: 0;
+    color: white;
 }
 
 .table__text {
@@ -242,11 +216,7 @@
  }
 
  .table__text_theme_dark {
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: normal;
-    margin: 0;
-    padding-top: 20px;
+    color: white;
  }
    
 .feinman {
@@ -255,30 +225,31 @@
     flex-direction: column;
     position: relative;
     justify-content: flex-start;
-    height: 890px;
+    height: 790px;
     background-color: #F2F2F2;
     background-image: url(../images/feinman.png);
     background-position: bottom left;
     background-size: 867px 637px;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;   
+    padding-top: 100px;
  }  
    
 .feinman__title {
     text-align: center;
     width: 648px;
-    margin-left: auto;
+    margin-top: 0;
     margin-right: auto;
-    margin-top: 100px;
     margin-bottom: 0;
+    margin-left: auto;
     line-height: 1.15;
     font-size: 120px;
     font-weight: bolder;
  }
 
 .feinman__subtitle {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -310,21 +281,22 @@
     overflow: hidden;
     width: 1600px;
     color: white;  
- }
-
- .table__cell_theme_dark_padding {
-    margin-top: 80px; 
+    z-index: -3;
  }
 
 .table__cell_theme_dark {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
     width: 200px;
     justify-content: flex-start; 
     color: white;
+    width: 200px;    
+    margin-right: 0;
+    margin-top: 80px;
  }
+
+ .table_theme_dark .table__cell_theme_dark:nth-child(n+6) {
+    margin-top: 80px;
+   } 
+
 .kaufman__triangle {
     position: absolute; 
      width: 877px; 
@@ -366,8 +338,8 @@
     flex-basis: 711px;
  }
 .logo_place_footer {
-    width: 183px;
     height: 35px;
+    width: 183px; 
  }
 
 .footer__author {
